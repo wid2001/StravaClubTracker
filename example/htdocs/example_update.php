@@ -28,7 +28,7 @@ $endDate   = '2022-10-31';
 $oauth = new OAuth([
 	'clientId'     => 52223,
 	'clientSecret' => '19a68300f850f5781b7a6aee1e6bfe487e157d11',
-	'redirectUri'  => 'https://m43-strava-leaderboard.herokuapp.com/'
+	'redirectUri'  => 'postgres://neeoqzxkzrekzh:6f3c224fa8ce616b976e8fe7e5127cd6da725e806e214c1ebc561ef1febecb4f@ec2-3-219-19-205.compute-1.amazonaws.com:5432/dblur7pcln8gr1'
 ]);
 
 if (!isset($_GET['code'])) {
