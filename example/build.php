@@ -8,7 +8,7 @@ use picasticks\Strava\ClubTracker;
 require_once 'lib/vendor/autoload.php';
 
 // Set a TZ for date calculations
-date_default_timezone_set('America/New_York');
+date_default_timezone_set('America/Boise');
 
 $tracker = new ClubTracker(new Club(__DIR__.'/json'));
 
