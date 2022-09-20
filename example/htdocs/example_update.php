@@ -14,25 +14,21 @@ require_once '../lib/vendor/autoload.php';
 
 // Define list of Strava Club IDs to track
 $clubs = array(
-	123456,
-	123456,
-	123456,
-	123456,
-	123456,
+	620498,
 );
 
 // Set a TZ for date calculations
-date_default_timezone_set('America/New_York');
+date_default_timezone_set('America/Boise');
 
 // Set start and end date for tracking
-$startDate = '2021-01-01';
-$endDate   = '2021-01-03';
+$startDate = '2022-10-01';
+$endDate   = '2022-10-31';
 
 // Replace with your Strava API credentials and the URI of this script
 $oauth = new OAuth([
-	'clientId'     => 12345,
-	'clientSecret' => 'your-client-secret',
-	'redirectUri'  => 'https://your.example.org/example_update.php'
+	'clientId'     => 52223,
+	'clientSecret' => '19a68300f850f5781b7a6aee1e6bfe487e157d11',
+	'redirectUri'  => 'https://m43-strava-leaderboard.herokuapp.com/'
 ]);
 
 if (!isset($_GET['code'])) {
